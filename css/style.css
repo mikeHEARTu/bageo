@@ -1,14 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
 
+@font-face {
+    font-family: 'bageo';
+    src: url('../webfonts/Bageo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bageo-alt';
+    src: url('../webfonts/Bageo_Alternates.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body
 {
-	color:white;
-	background: black;
-	font-family: 'Inter', sans-serif;
+	color: #0C2461;;
+	background: white;
+	font-family: 'bageo', 'Inter', sans-serif;
 	font-size: 5vw;
 	font-weight: 400;
 	text-align:center;
-	text-transform: uppercase;
 }
 .streamCanvas
 {
@@ -22,35 +34,42 @@ body
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: url("../img/jordan-mcgee-moqWSeBjLIc-unsplash.jpg");
+	background-image: linear-gradient(0deg, rgba(250, 211, 144, 0.5), rgba(250, 211, 144, 0.25)), url(../img/charles-deluvio-0v_1TPz1uXw-unsplash.jpg);
 	background-position: center center;
 	background-size: cover;
 
-	animation: fadeIn 1s 0.5s backwards;
+	animation: fadeIn 2s 0.5s backwards;
 }
 .textContainer
 {
 	width:fit-content;
 	padding: 3vw;
 	display: inline-block;
-	background-color: black;
-
-	animation: fadeIn 1s 1.0s backwards;
 }
 .textTitle
 {
+	display: inline-block;
+	font-family: 'bageo-alt', 'Inter', sans-serif;
 	font-weight: 900;
+	letter-spacing: 0.25em;
+	margin-bottom: 2vh;
+
+	animation: fadeIn 2s 2.0s backwards;
 }
 .socialContainer
 {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	font-size:0.3em;
+	font-size:0.4em;
+	animation: fadeIn 2s 2.25s backwards;
 }
 .textSocial
 {
+	color: #079992;
+	letter-spacing: 0.1em;
 	margin: 0 1vw;
+	text-transform: uppercase;
 }
 
 @keyframes fadeIn
